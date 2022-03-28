@@ -1,0 +1,4 @@
+"PatientLabReportID,PatientRegisterID,DiseaseName,LabTestID,TestValue,Comment "
+"2022011011,'MAR012022','Sugar',2022011099,'$10','Positive'"
+"2022021233,'MAR102022','Creatine',2022021277,'$12','Positive'"
+"2022031566,'MAR222022','Thyroid',2022031588,'$15','Negative'"

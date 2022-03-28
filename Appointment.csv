@@ -1,0 +1,4 @@
+"PatientID,DoctorID,AppoitmentDate,AppointmentType "
+"20220301,0325101,'2022-01-25','Scheduled'"
+"20220310,0326401,'2022-02-10','UnScheduled'"
+"20220322,0329110,'2022-02-15','Scheduled'"
