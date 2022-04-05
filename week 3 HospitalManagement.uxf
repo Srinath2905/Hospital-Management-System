@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>50</y>
+      <w>170</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Patient
+--------
+PatientID[int]
+PatientRegID[varchar(50)]
+FirstName[varchar(20)]
+LastName[varchar(20)]
+DOB[date]
+Gender[varchar(5)]
+PhoneN0[varchar(20)]
+EmailID[varchar(50)]
+BloodGroup[varchar(10)]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>260</y>
+      <w>170</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Doctor
+--------
+DoctorID[int]
+DoctorName[varchar(50)]
+EmailID[varchar(50)]
+Specialization[varchar(50)]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>60</y>
+      <w>190</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Billing
+--------
+PatientBillingID[int]
+PatientRegisterID[varchar(50)]
+TransactionDesc[varchar(50)]
+Amount[float]
+GeneratedDate[datetime]
+PatientAddress[varchar(100)]
+PatientType[varchar(50)]
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>310</y>
+      <w>190</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Lab
+--------
+PatientLabReportID[int]
+PatientRegisterID[varchar(50)]
+DiseaseName[varchar(100)]
+LabTestID[int]
+Testvalue[varchar(50)]
+comment[varchar(50)]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>60</y>
+      <w>200</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Appointment
+--------
+PatientID[int]
+DoctorID[int]
+AppointmentDate[datetime]
+AppointmentType[varchar(50)]
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>120</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>110</x>
+      <y>170</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>510</x>
+      <y>140</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>230</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+</diagram>
